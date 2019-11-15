@@ -1,0 +1,121 @@
+.conatiner{
+    margin: auto; 
+    max-width: 80%;
+    display: flex;
+    padding: 12px 24px;
+    
+  
+    margin-top: 12px;
+}
+  
+.leftConatiner{
+    width: 50%;
+    box-sizing: border-box;
+    position: relative; 
+}
+  
+.previewImg{
+    width: 100%;
+    
+}
+
+.time{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    color:blue;
+    font-weight: 600; 
+}
+
+.heart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    color:red;
+    text-align: center;
+    font-weight: 600; 
+}
+
+.heart > img{
+    width: 100px;
+    animation: heartBeat 1s infinite;
+}
+
+@keyframes heartBeat{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+.heart > p{
+    color: white;
+    margin-top: 12px;
+}
+
+.rightConatiner{
+    width: 50%;
+    padding: 12px;
+}
+
+.rightConatiner > h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rightConatiner > p{
+    color: rgba(0,0,0,0.8);
+}
+
+.rightConatiner > h3{
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: 600; */
+}
+
+.colorOption > img{
+    width: 100px;
+    cursor: pointer;
+}
+
+
+.activeColorOption{
+    border:2px solid teal;
+    border-radius: 8px;
+}
+
+.featureBtns{
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    
+    margin-top: 12px;
+    margin-right: 12px;
+    padding: 12px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.activeBtn{
+    background-color: gray;
+}
+.buyBtn{
+    
+    border: none;
+    border-radius: 8px;
+    background-color: teal;
+    outline: none;
+    
+    margin-top: 12px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
